@@ -1,18 +1,19 @@
 
-class Demo{ // OY
+class Demo{ // OZ
 	public static void main(String[] args){
 		Scherm s = new Scherm();
-		s.verstelHoogte();
+		s.verstelHoogte(25);
 		System.out.println(s.hoogte);
+		new Scherm().verstelHoogte(15);
 	}
 }
 class Scherm{
-	int hoogte;
+	boolean hoogte;
 	Scherm(){
 		System.out.println("Ik zie dingen");
 	}
-	void verstelHoogte(){
-		System.out.println("ff verstellen");
+	void verstelHoogte(int hoogte){
+		System.out.println("ff verstellen"+hoogte);
 	}
 
 }
