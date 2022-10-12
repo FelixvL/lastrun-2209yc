@@ -1,8 +1,8 @@
 
-class Demo{ // OU
+class Demo{ // OW
 	public static void main(String[] args){
-		int getal = 15;
-		long getal2 = getal;
+		float getal = 15.3;
+		double getal2 = getal;
 		System.out.println(getal2);
 	}
 }
