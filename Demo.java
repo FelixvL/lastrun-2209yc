@@ -1,5 +1,5 @@
 
-class Demo{ // PC
+class Demo{ // PD
 	public static void main(String[] args){
 		Dier d = new Kip();
 		d.lopen();
@@ -14,6 +14,7 @@ class Dier{
 class Kip extends Dier{
 	int lopen(){
 		System.out.println("kip");
+		return 5;
 	}
 }
 
