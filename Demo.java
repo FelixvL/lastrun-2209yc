@@ -1,7 +1,7 @@
 
-class Demo{ // OW
+class Demo{ // OX
 	public static void main(String[] args){
-		float getal = 15.3;
+		char getal = 70;
 		double getal2 = getal;
 		System.out.println(getal2);
 	}
