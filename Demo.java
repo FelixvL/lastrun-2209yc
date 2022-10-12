@@ -1,28 +1,19 @@
 
-class Demo{ // PB
+class Demo{ // PC
 	public static void main(String[] args){
-
+		Dier d = new Kip();
+		d.lopen();
 	}
 }
-class Scherm{
-	int hoogte;
-	Scherm(){
-		hoogte += 12;
-		System.out.println("Ik zie dingen");
+class Dier{
+	void lopen(){
+		System.out.println("Dier");
 	}
-	Scherm(int a){
-			System.out.println("nog meer dingen");
-	}
-	void verstelHoogte(int hoogte){
-		hoogte = hoogte;
-		System.out.println("ff verstellen"+hoogte);
-	}
-	int verstelHoogte(String hoogte){
-		System.out.println("ergonomisch!");
-		return 7;
-	}
-
 }
 
-
+class Kip extends Dier{
+	int lopen(){
+		System.out.println("kip");
+	}
+}
 
