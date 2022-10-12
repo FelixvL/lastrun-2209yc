@@ -1,10 +1,7 @@
 
-class Demo{ // PA
+class Demo{ // PB
 	public static void main(String[] args){
-		Scherm s = new Scherm();
-		s.verstelHoogte(25);
-		System.out.println(s.hoogte);
-		new Scherm().verstelHoogte(15);
+
 	}
 }
 class Scherm{
@@ -20,8 +17,9 @@ class Scherm{
 		hoogte = hoogte;
 		System.out.println("ff verstellen"+hoogte);
 	}
-	void verstelHoogte(String hoogte){
+	int verstelHoogte(String hoogte){
 		System.out.println("ergonomisch!");
+		return 7;
 	}
 
 }
