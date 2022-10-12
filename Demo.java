@@ -1,7 +1,7 @@
 
-class Demo{ // PF
+class Demo{ // PG
 	public static void main(String[] args){
-		Boerderderij bd = new Boerderij();
+		Boerderij bd = new Boerderij();
 		Dier d = bd.fokken();
 		d.lopen();
 	}
