@@ -1,20 +1,25 @@
 
-class Demo{ // AG
+class Demo{ // AH
 	public static void main(String[] args){
 		Go hond = new Hond();
 		hond.lopen();
+		hond.lopen(25);
 		System.out.println(hond.a);
 	}
 }
 
 interface Go{
-	int a = 25;
-	void lopen();
+	int a;
+	public abstract void lopen();
 }
 
 class Hond implements Go{
 
-	void lopen(){
+	public void lopen(){
 		System.out.println("lopen met" + a);
+	}
+	void lopen(int r){
+		System.out.println("in lopen met r");
+		return 17;
 	}
 }
