@@ -1,31 +1,20 @@
 
-class Demo{ // AF
+class Demo{ // AG
 	public static void main(String[] args){
-		Gereedschap h = new HooiVork();
-		System.out.println(h.b);
-		h.draaien();
+		Go hond = new Hond();
+		hond.lopen();
+		System.out.println(hond.a);
 	}
 }
 
-class Gereedschap{
-	final int b;
-	Gereedschap(){
-		System.out.println("in g");
-	}
-	void draaien(){
-		System.out.println("oei duizelig");
-	}
+interface Go{
+	int a = 25;
+	void lopen();
 }
-class HooiVork extends Gereedschap{
-	int b = 5;	
-	HooiVork(){
-		this(4);
-		System.out.println("ooit weer" + b);
-	}
-	HooiVork(int b){
-		System.out.println("tweede");
-	}
-	void draaien(){
-		System.out.println("oei heel duizelig");
+
+class Hond implements Go{
+
+	void lopen(){
+		System.out.println("lopen met" + a);
 	}
 }
