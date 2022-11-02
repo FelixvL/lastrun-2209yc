@@ -1,10 +1,8 @@
 
-class Demo{ // AA
+class Demo{ // AB
 	public static void main(String[] args){
-		System.out.println(args.length);
-		Bezem b = new Bezem();
-		Bezem b2 = new Bezem();
-		System.out.println(b.a);
+		HooiVork h = new HooiVork();
+		HooiVork h2 = new HooiVork();
 	}
 }
 
@@ -13,5 +11,16 @@ class Bezem{
 	static int hoi(){
 		System.out.println("in hoi");
 		return 17;
+	}
+}
+class HooiVork{
+	{
+		System.out.println("in iets");
+	}
+	static {
+		System.out.println("iets anders");
+	}
+	HooiVork(){
+		System.out.println("ooit weer");
 	}
 }
