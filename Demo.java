@@ -1,20 +1,17 @@
 
-class Demo{ // PH
+class Demo{ // AA
 	public static void main(String[] args){
-		D d = new D();
-		A y = d.en();
-		y.c();
-	}
-}
-class A{
-	void c(){
-		System.out.println("in c");
+		System.out.println(args.length);
+		Bezem b = new Bezem();
+		Bezem b2 = new Bezem();
+		System.out.println(b.a);
 	}
 }
 
-class D{
-	A en(){
-		System.out.println("in en");
-		return new A();
+class Bezem{
+	int a = hoi();
+	static int hoi(){
+		System.out.println("in hoi");
+		return 17;
 	}
 }
