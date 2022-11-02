@@ -1,22 +1,17 @@
 
-class Demo{ // AC
+class Demo{ // AD
 	public static void main(String[] args){
-		HooiVork h = new HooiVork();
-		HooiVork h2 = new HooiVork();
+		Gereedschap h = new HooiVork();
 		System.out.println(h.b);
 	}
 }
 
-
-class HooiVork{
-	int b = 5;
-	static {
-		System.out.println("iets anders" + b++);
-	}
+class Gereedschap{
+	int b = 14;
+}
+class HooiVork extends Gereedschap{
+	int b = 5;	
 	HooiVork(){
-		System.out.println("ooit weer" + ++b);
-	}
-	{
-		System.out.println("in iets" + ++b);
+		System.out.println("ooit weer" + b);
 	}
 }
